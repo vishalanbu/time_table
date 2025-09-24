@@ -23,165 +23,135 @@ Add your timetable using `<td>` tag.
 Execute the program using runserver command.
 
 # PROGRAM
-```from http.server import HTTPServer,BaseHTTPRequestHandler
-content ='''
-<!DOCTYPE html>
-<html>f
+<html>
 <head>
-  <title>TCP/IP Protocol Table</title>
-  <style>
-    table {
-      width: 80%;
-      border-collapse: collapse;
-      margin: 20px auto;
-      font-family: Arial, sans-serif;
-    }
-    th, td {
-      border: 1px solid #444;
-      padding: 10px;
-      text-align: center;
-    }
-    th {
-      background-color: #2980b9;
-      color: white;
-    }
-    caption {
-      font-size: 1.5em;
-      margin-bottom: 10px;
-      font-weight: bold;
-    }
-  </style>
+
 </head>
 <body>
-  <table>
-    <caption>TCP/IP Protocol Suite</caption>
+    <style>
+        th{
+            background-color:yellow;
+        }
+        td{
+            background-color:aquamarine;
+        }
+
+        img{
+            margin-left:30%;
+        }
+        caption{
+            align-items: center;
+        }
+        #sta {
+            width:60%;
+            height:40%;
+        }
+        #abc
+        {
+           width:50%;
+           height:30%;
+        }
+        body{
+             background-image: WHITE (120deg, #3e47fc, #e04bae);
+
+        }
+    </style>
+    <br>
+    <br>
+
+     
+<center>
+<table border="2" id="sta">
+    <caption>SLOT TIME TABLE-VISHAL(25016264)</caption>
+   
+        <tr>
+            <th>Day/Time</th>
+            <th>8-10</th>
+            <th>10-12</th>
+            <th>12-1</th>
+            <th>1-3</th>
+            <th>3-5</th>
+            </tr>
+        <tr>
+            <th>Monday</th>
+            <td>FWAD</td>
+            <td>FREE SLOT</td>
+            <td>LUNCH</td>
+            <td>FCP</td>
+            <td>FREE SLOT</td>
+        </tr>
+        <tr>
+            <th>Tuesday</th>
+            <td colspan="2">CE</td>
+            <td>LUNCH</td>
+            <td colspan="2">FREE SLOT</td>
+        </tr>
+        <tr>
+            <th>Wednesday</th>
+            <td colspan="2">FWAD</td>
+            <td>LUNCH</td>
+            <td>MENTOR MEET</td>
+            <td>FCP</td>
+        </tr>
+        <tr>
+            <th>Thursday</th>
+            <td>CE</td>
+            <td>FCP</td>
+            <td>LUNCH</td>
+            <td>CE</td>
+            <td>FCP</td>
+            
+        </tr>
+        <tr>
+            <th>Friday</th>
+            <td>CE</td>
+            <td>CE</td>
+            <td>LUNCH</td>
+            <td colspan="2">FREE SLOT</td>
+
+        </tr>
+        <tr>
+            <th>Saturday</th>
+            <td>CE</td>
+            <td>FWAD</td>
+        <td>LUNCH</td>
+        <td>CE</td>
+        <td>FREE SLOT</td>
+         </tr>
+</table>
+<br>
+<br>
+<br>
+<table border="3" id="abc">
     <tr>
-      <th>Layer</th>
-      <th>Function</th>
-      <th>Common Protocols</th>
+        <th>S.No</th>
+        <th>Subject Code</th>
+        <th>Subject Name</th>
     </tr>
     <tr>
-      <td>Application</td>
-      <td>Provides services to user applications</td>
-      <td>HTTP, FTP, SMTP, DNS, DHCP, SNMP</td>
-    </tr>
-    <tr>
-      <td>Transport</td>
-      <td>Reliable or fast data transmission</td>
-      <td>TCP, UDP</td>
-    </tr>
-    <tr>
-      <td>Internet</td>
-      <td>Routing and logical addressing</td>
-      <td>IP, ICMP, ARP, RARP</td>
-    </tr>
-    <tr>
-      <td>Network Access</td>
-      <td>Physical data transmission</td>
-      <td>Ethernet, Wi-Fi, PPP</td>
-    </tr>
-  </table>
+        <td>1.</td>
+    <td>19AI414</td>  
+<td >Fundamental of Web Application Development(FWAD)</td>  </tr>
+<tr>
+    <td>2.</td>
+    <td>19AI304</td>
+    <td>Fundamental of C Programming(FCP)</td>
+</tr>
+<tr>
+    <td>3.</td>
+    <td>19EN101</td>
+    <td>Communicative English(CE)</td>
+</tr>
+</table>
+</center>
+
+
 </body>
 </html>
-'''
-class MyServer(BaseHTTPRequestHandler):
-    def do_GET(self):
-        print("Get request received...")
-        self.send_response(200)
-        self.send_header("content-type", "text/html")
-        self.end_headers()
-        self.wfile.write(content.encode())
-print("This is my webserver")
-server_address =('',8000)
-httpd = HTTPServer(server_address,MyServer)
-httpd.serve_forever()
-from http.server import HTTPServer,BaseHTTPRequestHandler
-content ='''
-<!DOCTYPE html>
-<html>f
-<head>
-  <title>TCP/IP Protocol Table</title>
-  <style>
-    table {
-      width: 80%;
-      border-collapse: collapse;
-      margin: 20px auto;
-      font-family: Arial, sans-serif;
-    }
-    th, td {
-      border: 1px solid #444;
-      padding: 10px;
-      text-align: center;
-    }
-    th {
-      background-color: #2980b9;
-      color: white;
-    }
-    caption {
-      font-size: 1.5em;
-      margin-bottom: 10px;
-      font-weight: bold;
-    }
-  </style>
-</head>
-<body>
-  <table>
-    <caption>TCP/IP Protocol Suite</caption>
-    <tr>
-      <th>Layer</th>
-      <th>Function</th>
-      <th>Common Protocols</th>
-    </tr>
-    <tr>
-      <td>Application</td>
-      <td>Provides services to user applications</td>
-      <td>HTTP, FTP, SMTP, DNS, DHCP, SNMP</td>
-    </tr>
-    <tr>
-      <td>Transport</td>
-      <td>Reliable or fast data transmission</td>
-      <td>TCP, UDP</td>
-    </tr>
-    <tr>
-      <td>Internet</td>
-      <td>Routing and logical addressing</td>
-      <td>IP, ICMP, ARP, RARP</td>
-    </tr>
-    <tr>
-      <td>Network Access</td>
-      <td>Physical data transmission</td>
-      <td>Ethernet, Wi-Fi, PPP</td>
-    </tr>
-  </table>
-</body>
-</html>
-'''
-class MyServer(BaseHTTPRequestHandler):
-    def do_GET(self):
-        print("Get request received...")
-        self.send_response(200)
-        self.send_header("content-type", "text/html")
-        self.end_headers()
-        self.wfile.write(content.encode())
-print("This is my webserver")
-server_address =('',8000)
-httpd = HTTPServer(server_address,MyServer)
-httpd.serve_forever()
-class Myserver(BaseHTTPRequestHandler):
-    def do_GET(self):
-        print("Get request received...")
-        self.send_response(200)
-        self.send_header("content-type","text/html")
-        self.end_headers()
-        self.wfile.write(content.encode())
-print("This is my webserver")
-server_address =('',8000)
-httpd = HTTPServer(server_address,Myserver)
-httpd.serve_forever()
-```
+
 # OUTPUT
-![alt text](<Screenshot 2025-09-19 185447.png>)
-![alt text](<Screenshot 2025-09-19 190139.png>)
+
+![Uploading Screenshot 2025-09-24 131735.png…]()
 
 # RESULT
 The program for creating slot timetable using basic HTML tags is executed successfully.
