@@ -23,6 +23,7 @@ Add your timetable using `<td>` tag.
 Execute the program using runserver command.
 
 # PROGRAM
+,,,
 <html>
 <head>
 
@@ -148,7 +149,7 @@ Execute the program using runserver command.
 
 </body>
 </html>
-
+,,,
 # OUTPUT
 ![Uploading Screenshot 2025-09-24 134820.png…]()
 
