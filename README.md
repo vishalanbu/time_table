@@ -150,6 +150,7 @@ Execute the program using runserver command.
 </html>
 
 # OUTPUT
+![Uploading Screenshot 2025-09-24 134820.png…]()
 
 ![Uploading Screenshot 2025-09-24 131735.png…]()
 
