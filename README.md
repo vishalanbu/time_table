@@ -1,5 +1,5 @@
 # Ex03 Time Table
-# Date:24/09/2025
+# Date: 27/09/2025
 # AIM
 To write a html webpage page to display your slot timetable.
 
@@ -23,7 +23,7 @@ Add your timetable using `<td>` tag.
 Execute the program using runserver command.
 
 # PROGRAM
-,,,
+```
 <html>
 <head>
 
@@ -149,12 +149,9 @@ Execute the program using runserver command.
 
 </body>
 </html>
-,,,
+```
 # OUTPUT
-![Uploading Screenshot 2025-09-24 134820.png…]()
-
-![Uploading Screenshot 2025-09-24 131735.png…]()
-
+![alt text](<Screenshot 2025-09-27 082054.png>)
 
 # RESULT
 The program for creating slot timetable using basic HTML tags is executed successfully.
